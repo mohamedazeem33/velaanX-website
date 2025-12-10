@@ -5,10 +5,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "@/context/CartContext";
 import Index from "./pages/Index";
-import Products from "./pages/Products";
+import Products from "./pages/Farmers";
 import Farmers from "./pages/Farmers";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
+import JoinFarmer from "./pages/JoinFarmer";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
             <Route path="/farmers" element={<Farmers />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/join-farmer" element={<JoinFarmer />} />
           </Routes>
         </BrowserRouter>
       </CartProvider>

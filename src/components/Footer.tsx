@@ -91,22 +91,22 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-cream/70">
                 <MapPin className="w-5 h-5 text-golden" />
-                <span>Nairobi, Kenya</span>
+                <span>Madurai, TamilNadu</span>
               </li>
               <li className="flex items-center gap-3 text-cream/70">
                 <Phone className="w-5 h-5 text-golden" />
-                <span>+254 700 123 456</span>
+                <span>+91 9655732612</span>
               </li>
               <li className="flex items-center gap-3 text-cream/70">
                 <Mail className="w-5 h-5 text-golden" />
-                <span>hello@farmfresh.co.ke</span>
+                <span>velaanx@gmail.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-cream/10 mt-12 pt-8 text-center text-cream/50">
-          <p>© 2024 FarmFresh. All rights reserved. Supporting local farmers, one order at a time.</p>
+          <p>© 2025 FarmFresh. All rights reserved. Supporting local farmers, one order at a time.</p>
         </div>
       </div>
     </footer>

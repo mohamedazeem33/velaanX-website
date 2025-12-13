@@ -30,13 +30,14 @@ const Navbar = () => {
             <Link to="/" className="text-foreground hover:text-primary transition-colors font-medium">
               Home
             </Link>
-            <Link to="/products" className="text-foreground hover:text-primary transition-colors font-medium">
+
+            <Link to="/farmers" className="text-foreground hover:text-primary transition-colors font-medium">
               Our Farmers
             </Link>
-            <Link to="/farmers" className="text-foreground hover:text-primary transition-colors font-medium">
+
+            <Link to="/products" className="text-foreground hover:text-primary transition-colors font-medium">
               About Us
             </Link>
-            
           </div>
 
           {/* Desktop – Location Selector + Cart */}
@@ -45,16 +46,7 @@ const Navbar = () => {
             {/* Replace with LocationSelector */}
             <LocationSelector />
 
-            <Link to="/cart">
-              <Button variant="ghost" size="icon" className="relative">
-                <ShoppingCart className="w-5 h-5" />
-                {totalItems > 0 && (
-                  <span className="absolute -top-1 -right-1 w-5 h-5 bg-secondary text-secondary-foreground text-xs rounded-full flex items-center justify-center animate-scale-in">
-                    {totalItems}
-                  </span>
-                )}
-              </Button>
-            </Link>
+            
 
             <Link to="/Join-farmer">
               <Button variant="hero" size="sm">Join as Farmer</Button>
@@ -98,19 +90,19 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="/products"
-              className="text-foreground hover:text-primary transition-colors font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              Products
-            </Link>
-
-            <Link
               to="/farmers"
               className="text-foreground hover:text-primary transition-colors font-medium"
               onClick={() => setIsOpen(false)}
             >
-              Farmers
+              Our Farmers
+            </Link>
+
+            <Link
+              to="/products"
+              className="text-foreground hover:text-primary transition-colors font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              About Us
             </Link>
 
             {/* MOBILE – Replace location block */}
